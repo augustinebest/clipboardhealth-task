@@ -9,7 +9,8 @@ You've been asked to refactor the function `deterministicPartitionKey` in [`dpk.
 You will be graded on the exhaustiveness and quality of your unit tests, the depth of your refactor, and the level of insight into your thought process provided by the written explanation.
 
 ## Your Explanation Here
-**create a util function to generate hash** and **Use early returns instead of nested if statements**
+**create a util function to generate hash** and **Use early returns instead of nested if statements** 
+
 Moved generating hash to a util function instead of doing this directly in the deterministicPartitionKey function. This makes the code easier to read and allows this function to be reused in other parts of the codebase. Also Using earlier returns makes the code easier to read and reason about. Early returns allow us to handle the base case and return early, so we don't have to worry about nesting further logic inside more if statements.
 
 
